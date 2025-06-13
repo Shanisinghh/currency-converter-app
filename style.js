@@ -14,7 +14,7 @@ const API_KEY = "82dc7d302ea2e587d6e19b71";
 async function convertCurrency() {
     const gettingData =" Geting Exchange Rate....."
    renderData.innerHTML = `
-        <p class="text-green-700  m-auto md:text-[21px] text-[20px]">${gettingData}</p>
+        <p class="text-green-700 sm:p-0.5 sm:text-[18px] m-auto md:text-[21px] text-[20px]">${gettingData}</p>
      `
     
   const from = from_Input.value;
@@ -31,7 +31,7 @@ async function convertCurrency() {
   console.log(fromValue, from, toValue, to);
 
   renderData.innerHTML = ` 
-        <p class="m-auto md:text-[21px] text-[20px]">${fromValue} ${from} = ${toValue} ${to}</p>
+        <p class="m-auto md:text-[21px] sm:p-0.5 sm:text-[18px] text-[20px]">${fromValue} ${from} = ${toValue} ${to}</p>
     `;
 }
 

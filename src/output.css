@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -31,7 +30,6 @@
     --radius-sm: 0.25rem;
     --radius-md: 0.375rem;
     --radius-3xl: 1.5rem;
-    --radius-4xl: 2rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -344,35 +342,17 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-\[\#e0d7d7\] {
-    background-color: #e0d7d7;
-  }
-  .bg-\[\#ece4e4\] {
-    background-color: #ece4e4;
-  }
   .bg-\[\#f0e1e1\] {
     background-color: #f0e1e1;
   }
-  .bg-\[rgba\(0\,0\,0\,0\.7\)\] {
-    background-color: rgba(0,0,0,0.7);
-  }
   .bg-\[rgba\(0\,0\,0\,0\.8\)\] {
     background-color: rgba(0,0,0,0.8);
-  }
-  .bg-\[rgba\(0\,0\,0\,0\.9\)\] {
-    background-color: rgba(0,0,0,0.9);
   }
   .bg-\[rgba\(15\,15\,15\,0\.7\)\] {
     background-color: rgba(15,15,15,0.7);
   }
   .bg-\[rgba\(17\,16\,16\,0\.7\)\] {
     background-color: rgba(17,16,16,0.7);
-  }
-  .bg-\[rgba\(77\,71\,71\,0\.7\)\] {
-    background-color: rgba(77,71,71,0.7);
-  }
-  .bg-\[rgba\(202\,190\,190\,0\.7\)\] {
-    background-color: rgba(202,190,190,0.7);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -497,55 +477,121 @@
       }
     }
   }
+  .sm\:mt-10 {
+    @media (width >= 374px) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:h-19 {
+    @media (width >= 374px) {
+      height: calc(var(--spacing) * 19);
+    }
+  }
+  .sm\:w-\[95\%\] {
+    @media (width >= 374px) {
+      width: 95%;
+    }
+  }
+  .sm\:w-\[97\%\] {
+    @media (width >= 374px) {
+      width: 97%;
+    }
+  }
+  .sm\:w-\[98\%\] {
+    @media (width >= 374px) {
+      width: 98%;
+    }
+  }
+  .sm\:w-\[99\%\] {
+    @media (width >= 374px) {
+      width: 99%;
+    }
+  }
+  .sm\:p-0\.5 {
+    @media (width >= 374px) {
+      padding: calc(var(--spacing) * 0.5);
+    }
+  }
+  .sm\:p-1 {
+    @media (width >= 374px) {
+      padding: calc(var(--spacing) * 1);
+    }
+  }
+  .sm\:text-2xl {
+    @media (width >= 374px) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .sm\:text-\[18px\] {
+    @media (width >= 374px) {
+      font-size: 18px;
+    }
+  }
+  .sm\:text-\[28px\] {
+    @media (width >= 374px) {
+      font-size: 28px;
+    }
+  }
+  .sm\:text-\[18\] {
+    @media (width >= 374px) {
+      color: 18;
+    }
+  }
   .md\:top-\[100px\] {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       top: 100px;
     }
   }
   .md\:mt-8 {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       margin-top: calc(var(--spacing) * 8);
     }
   }
   .md\:h-24 {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       height: calc(var(--spacing) * 24);
     }
   }
   .md\:w-39 {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       width: calc(var(--spacing) * 39);
     }
   }
+  .md\:w-\[50\%\] {
+    @media (width >= 770px) {
+      width: 50%;
+    }
+  }
   .md\:p-9 {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       padding: calc(var(--spacing) * 9);
     }
   }
   .md\:px-3\.5 {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       padding-inline: calc(var(--spacing) * 3.5);
     }
   }
   .md\:px-4 {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       padding-inline: calc(var(--spacing) * 4);
     }
   }
   .md\:text-5xl {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
   .md\:text-xl {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .md\:text-\[21px\] {
-    @media (width >= 48rem) {
+    @media (width >= 770px) {
       font-size: 21px;
     }
   }
