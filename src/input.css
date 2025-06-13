@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+.background{
+    background-image: url(/image/background1.jpg);
+    background-position: cover;
+    background-size: cover;
+    background-repeat: repeat;
+ 
+}
+.myborder{
+    box-shadow: 0px 0px 2px 0.5px rgb(153, 153, 153);
+}
+.hideFromCountryOption{
+    transform: scale(0);
+    transition: all .2s;
+
+    transform-origin: top;
+}
+.hideToCountryOption{
+    transform: scale(0);
+    transition: all .2s;
+    transform-origin: top;
+}
+.active{
+      transform: scale(1);
+
+    transition: all .2s;
+    transform-origin: top;
+}
+.scrollBar::-webkit-scrollbar{
+    width: 12px;
+    
+}
+.scrollBar::-webkit-scrollbar-track{
+   background: linear-gradient(rgb(149, 147, 151),rgb(186, 194, 170));
+   box-shadow: inset 0px 0px 3px 0.5px black;
+    border-radius: 5px;
+}
+.scrollBar::-webkit-scrollbar-thumb{
+background: linear-gradient(rgb(221, 39, 39),rgb(0, 132, 255));
+   box-shadow: inset 0px 0px 3px 0.5px black;
+    border-radius: 5px;
+  
+}

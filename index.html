@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link href="src/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class=" relative text-gray-300 background flex bg-[#f0e1e1] justify-center  items-center h-[97vh]">
+    <div
+      class="shadow-2xl bg-[rgba(15,15,15,0.7)] rounded-3xl items-center px-3 py-7 md:p-9"
+    >
+      <div class="flex items-center gap-1.5">
+        <img src="image/main logo.png" class="md:h-24 h-20" alt="" />
+        <h1 class="md:text-5xl text-3xl font-bold">Currency Converter</h1>
+      </div>
+      <div class="flex flex-col pt-3.5">
+        <label class="md:text-[21px] text-[17px] font-bold pb-1.5" for="input"
+          >Enter Amount</label
+        >
+        <input
+          id="input"
+          class="outline-none myborder rounded-md h-10 font-semibold p-2 text-[19px]"
+          type="number"
+          value="1"
+        />
+      </div>
+      <div class="flex relative justify-between">
+        <div>
+          <h2 class="md:text-[21px] text-[17px] mt-3.5 mb-1.5 font-bold">
+            From
+          </h2>
+          <div
+            id="fromContainer"
+            class="flex cursor-pointer rounded-md h-11 myborder py-0.5 md:px-4 px-2 gap-2"
+          >
+            <img
+              src="https://flagsapi.com/US/flat/64.png"
+              class="w-[45px] fromImage"
+              alt=""
+            />
+            <input
+              id="fromInput"
+              type="text"
+              value="USD"
+              readonly
+              class=" text-xl font-semibold w-[45px] outline-none block"
+            />
+            <i class="fa-solid fa-chevron-down text-lg pt-3"></i>
+          </div>
+        </div>
+        <div
+          id="fromCountryOption"
+          class="scrollBar cursor-pointer hideFromCountryOption h-35 overflow-y-scroll scrollbar-hide md:px-3.5 px-1.5 md:w-39 w-35 bg-[rgba(0,0,0,0.8)] myborder rounded-sm absolute md:top-[100px] top-[95px]"
+        >
+          <div class=" w-20 h-0.5 border"></div>
+        </div>
+        <div>
+          <!-- <img src="image/exchange logo.png" class="h-15 " alt=""> -->
+          <i
+            class="fa-solid fa-arrow-right-arrow-left md:text-5xl text-3xl md:mt-8 mt-9"
+          ></i>
+        </div>
+        <div>
+          <h2 class="md:text-[21px] text-[17px] mt-3.5 mb-1.5 font-bold">To</h2>
+          <div
+            id="toContainer"
+            class="cursor-pointer flex rounded-md h-11 myborder py-0.5 md:px-4 px-2 gap-2"
+          >
+            <img
+              src="https://flagsapi.com/IN/flat/64.png"
+              class="w-[45px]"
+              alt=""
+            />
+            <input
+            id="toInput"
+              type="text"
+              value="INR"
+              readonly
+              class=" text-xl font-semibold w-[45px] outline-none block"
+            />
+            <i class="fa-solid fa-chevron-down text-lg pt-3"></i>
+          </div>
+        </div>
+        <div
+          id="toCountryOption"
+          class="scrollBar cursor-pointer hideToCountryOption h-35 overflow-y-scroll md:px-3.5 px-1.5 md:w-39 w-35 bg-[rgba(0,0,0,0.8)] myborder rounded-sm absolute right-0 md:top-[100px] top-[95px]"
+        >
+          <div class="w-25 h-0.5 border"></div>
+        </div>
+      </div>
+      <div id="renderData"
+        class=" w-[100%] p-1.5 font-semibold mt-6 rounded-md shadow-2xl bg-[rgba(17,16,16,0.7)] flex justify-center text-center"
+      >
+        <p class="  m-auto md:text-[21px] text-[20px]">1.00 USD = 85.54 INR</p>
+      </div>
+      <div>
+        <button
+          id="convertCurrencybutton"
+          class="bg-green-600 cursor-pointer hover:bg-green-700 myborder p-1.5 my-5 rounded-md md:text-xl text-[18px] font-semibold w-[100%]"
+        >
+          Get Exchange Rate
+        </button>
+      </div>
+    </div>
+    <script src="countryList.js"></script>
+    <script src="style.js"></script>
+    </div>
+     <footer class="text-center absolute bottom-0 mt-1.5 w-[100vw] items-center flex h-9 justify-center bg-black text-white md:text-md text-xs">
+        <p class=" "> © Copyright All rights reserved. Developed by Shani Babu</p>
+    </footer>
+
+  </body>
+</html>
